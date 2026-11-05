@@ -1,0 +1,10 @@
+name: secret-scan
+version: 0.1.0
+description: "Secrets should never leave the machine in an agent's reply. Secret Scan inspects outgoing replies and tool traffic for credential patterns (API keys, bot tokens, private keys, assigned passwords and secrets), redacts what it finds before the user or a third party sees it, and writes every finding to a local append-only ledger. Fail closed: if the scanner itself errors, the reply is marked unverified instead of passed silently."
+author: "Riki Wahyudi"
+requires_hermes: ">=0.22.0"
+provides_tools:
+  - secretscan_status
+provides_hooks:
+  - post_tool_call
+  - transform_llm_output
