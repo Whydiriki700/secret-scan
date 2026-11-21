@@ -1,3 +1,5 @@
+![secret-scan](assets/preview.png)
+
 # Secret Scan
 
 **Secrets never leave in a reply.**
